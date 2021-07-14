@@ -3,7 +3,7 @@
 
 def label="clickgetter-${UUID.randomUUID().toString()}"
 def gitCommit 
-def repoName = "ethanlebioda/clickcounter"
+def repoName = "ethanlebioda/clickgetter"
 def dev = "dev"
 def main = "main"
 def argoApp = "clickgetter-"
