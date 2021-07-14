@@ -5,7 +5,7 @@ url="https://${GIT_USERNAME}:${GIT_TOKEN}@github.com/crytome1995/Charts.git"
 git remote add origin ${url}
 
 release_dev () {
-    cd Charts/clickcounter
+    cd Charts/clickgetter
     sed -i "/^\([[:space:]]*tag: \).*/s//\1$2/" values.yaml
     git commit values.yaml -m "Releasing tag $2"
     git push ${url} $1
