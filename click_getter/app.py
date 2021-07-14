@@ -4,7 +4,7 @@ from dynamo import Dynamo
 from config import config
 from loggers import logger
 
-db = Dynamo(config.default_region, config.click_bags_table, config.click_users_table)
+db = Dynamo(config.default_region, config.click_bags_table)
 
 app = Flask(__name__)
 CORS(app)
